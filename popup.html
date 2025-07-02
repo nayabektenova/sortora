@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sortora</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="popup-container">
+    <h1>Sortora</h1>
+
+    <input type="text" id="query" placeholder="e.g. used SUV under $10k in Calgary" />
+    <button id="applyBtn">Apply Filters</button>
+
+    <div id="loading" style="display: none;">Processing your request...</div>
+
+    <div id="preview" style="display: none;">
+      <h3>Parsed Filters:</h3>
+      <pre id="filtersOutput"></pre>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
