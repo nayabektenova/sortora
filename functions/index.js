@@ -9,7 +9,7 @@ const corsHandler = cors({ origin: true });
 exports.parseQuery = onRequest(
   { secrets: [GROQ_API_KEY] },
   async (req, res) => {
-    console.log("⚡️ Function HIT");
+    console.log("Function HIT");
 
     corsHandler(req, res, async () => {
       const query = req.body.query;
